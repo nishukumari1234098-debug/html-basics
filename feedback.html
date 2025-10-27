@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝Feedback Page</title>
+</head>
+<body>
+    <header>
+        <h1>Submit Feedback📝 ✅</h1>
+    </header><hr><hr>
+    <main>
+        <div>
+            <p>We value your feedback! Please fill out the form below to share your thoughts, suggestions, or report any issues with the portal.</p>
+        </div>
+        <form action="submit_feedback">
+            <fieldset>
+                <legend><b>Feedback Form📝 </b></legend>
+
+                 <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+
+            
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" placeholder="your.email@example.com">
+            <br><br>
+
+
+            <label for="feedback">Feedback Type:</label><br>
+            <select name="type" id="type">
+                <option value="#">Select a type</option>
+                <option value="#">General Feedback</option>
+                <option value="#">suggestions</option>
+                <option value="#">Bug Report</option>
+                <option value="#">Complaint</option>
+                <option value="#">Praise</option>
+                <option value="#">Other</option>
+            </select><br><br>
+
+
+            <label for="rate">Overall Rating:</label><br><br>
+            <input type="radio" id="excellent" name="rate" value="excellent">
+            <label for="excellent">Excellent</label><br>
+            <input type="radio" id="good" name="rate" value="good">
+            <label for="good">Good</label><br>
+            <input type="radio" name="rate" id="average" value="average">
+            <label for="average">Average</label><br>
+            <input type="radio" name="rate" id="poor" value="poor">
+            <label for="poor">Poor</label><br>
+            <input type="radio" name="rate" id="bad" value="bad">
+            <label for="bad">Very Poor</label><br><br>
+
+
+            <label for="choose">Which areas would you like to comment on? (Select all that apply)</label><br><br>
+            <input type="checkbox" name="design" id="design">
+            <label for="design">Website Design</label><br>
+            <input type="checkbox" name="navigate" id="navigate">
+            <label for="navigate">Navigation</label><br>
+            <input type="checkbox" name="content" id="content">
+            <label for="content">Content Quality</label><br>
+            <input type="checkbox" name="function" id="function">
+            <label for="function">Functionality</label><br>
+            <input type="checkbox" name="perform" id="perform">
+            <label for="perform">Performance</label><br><br>
+
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea name="feedback" id="feedback" placeholder="Pleasae share your detailed feedbaack here...."></textarea><br>
+            <small><i>Minimum 20 characters requ</i></small><br><br>
+            <input type="checkbox" name="ensure" id="ensure">
+            <label for="ensure">I would like to receive updates about this portal</label><br><br>
+
+            <button>Submit Feedback</button><br>
+            <small><i>Note: This is a demonstration form. Data will not be saved or sent anywhere.</i></small>
+       
+            </fieldset>
+        </form><hr><hr>
+    </main>
+ 
+    <footer>
+        <h3>🔗Quick Links for more Information:</h3>
+        <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="grade.html">Grades Table</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <p><b>&copy; 2025 Student Portal. All rights reserved.</b></p>
+    <p><b>Your feedback helps us improve!</b></p>
+    </footer>
+    
+</body>
+</html>
