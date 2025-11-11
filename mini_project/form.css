@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     font-family: 'Inter', sans-serif;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     min-height: 100vh;
+    /* display: flex;
+     justify-content: center;
+     align-items: center; */
+     padding: 40px 20px;
+        
+}
+
+form{
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(253, 245, 255, 0.9);
+    border-radius: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+legend{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(254, 251, 255);
+    padding-bottom: 30px;
+    background-color: #764ba2;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.form-div{
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    
+}
+
+.name-inp{
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid rgba(139, 22, 249, 0.5);
+}
+
+.rio{
+    background-color:rgba(233, 204, 250, 0.3);
+    padding: 25px;
+    width: 90%;
+    border-radius: 15px;
+    /* padding-bottom: 0; */
+    font-size: 1.1rem;
+    border: 3px solid rgba(203, 22, 249, 0.5);
+}
+
+.text-feed{
+    width: 90%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 20px;
+    /* background-color: rgba(253, 249, 236, 0.3); */
+    border: 3px solid rgba(147, 22, 249, 0.5);
+}
+
+.para{
+    font-size: 1rem;
+    color: rgb(53, 52, 52);
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+input[type="radio"]{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+button{
+    padding: 17px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow:  0 10px 30px rgba(202, 90, 253, 0.5);
+    border: none;
+    color: white;
+}

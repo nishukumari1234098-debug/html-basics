@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+header{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: rgb(252, 250, 250);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    /* position: sticky;
+    top: 0; */
+    text-align: center;
+    width: 100%;
+    animation: slidedown 0.6s ease;
+    
+}
+@keyframes slidedown{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1{
+    font-size: 3.1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)
+}
+
+nav ul{
+    background-color: rgb(8, 8, 71);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 29px;
+    justify-content: center;
+    gap: 90px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    
+}
+
+nav a{
+    text-decoration: none;
+    background-color:#bb92fd;
+    padding: 15px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;   
+}
+
+nav a:hover{
+    transform: translateY(-6px);
+    background-color:  #764ba2;
+    color: white;
+    padding: 15px;
+    border-radius: 19px;
+    border-bottom:2px solid white ;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero{
+    width: 73%;
+    margin: auto;
+    background:  linear-gradient(135deg, rgba(133, 38, 211, 0.95) 0%, rgba(228, 96, 248, 0.95) 50%, rgba(236, 165, 253, 0.95) 100%);
+    margin-top: 40px;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+    line-height: 29px;
+}
+
+.hero h2{
+    color: white;
+    padding: 15px;
+    padding-bottom: 26px;
+
+}
+
+.hero-sec{
+    width: 67%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+.hero-sec p{
+    padding: 5px 30px;
+    font-size: 1.1rem;
+}
+.hero-sec h2{
+    font-size: 1.9rem;
+    color: purple;
+    margin: 20px 0;
+    padding-bottom: px;
+    border-bottom: 3px solid rgb(222, 45, 228);
+}
+.hero-sec h4{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+b{
+    color: #aa19ce;
+}
+
+.hero-sec a{
+    text-decoration: none;
+    color: #e879f9;
+    padding-left: 30px;
+}
+
+button{
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 1rem;
+    margin-top: 30px;
+    border: none;
+    background:  linear-gradient(135deg, rgba(133, 38, 211, 0.95) 0%, rgba(226, 105, 245, 0.95) 50%, rgba(203, 72, 236, 0.95) 100%);
+}
+
+
+footer{
+    margin-top: 70px;
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+ }
+
+ .foot{
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+ }
+
+ .foot-box1{
+    display: flex;
+    gap: 100px;
+ }
+
+ .min-foot{
+    padding: 25px;
+    width: 45%;
+ }
+ .min-foot h3{
+    font-size: 1.6rem;
+    color: #d8290a;
+ }
+ .min-foot p{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .icons1 a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: rgb(255, 215, 221);
+    padding: 9px;
+    border-radius: 50px;
+ }
+
+ .min-foot ul{
+    list-style: none;
+ }
+ .min-foot a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+ }
+ .cont{
+    padding: 25px;
+ }
+
+ .cont h3{
+    font-size: 1.6rem;
+    color: #d8290a;
+ }
+ .cont p{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .copy{
+    font-size: 1.3rem;
+    color:white;
+    text-align: center;
+    padding: 20px;
+ }
+
+
+
+ @media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .hero {
+        width: 90%;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .hero-sec {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-sec h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-sec p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+        font-size: 1rem;
+    }
+
+    .foot-box1 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .min-foot,
+    .cont {
+        width: 100%;
+    }
+
+    .min-foot h3,
+    .cont h3 {
+        font-size: 1.3rem;
+    }
+
+    .min-foot p,
+    .cont p {
+        font-size: 1rem;
+    }
+
+    .copy {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav ul {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .hero {
+        width: 85%;
+        font-size: 1.2rem;
+        padding: 25px;
+    }
+
+    .hero-sec {
+        width: 80%;
+        font-size: 1.1rem;
+    }
+
+    .foot {
+        width: 90%;
+    }
+
+    .foot-box1 {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .min-foot,
+    .cont {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        padding: 18px 25px;
+    }
+
+    .hero {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .hero-sec {
+        width: 60%;
+    }
+
+    .foot-box1 {
+        gap: 150px;
+    }
+
+    .copy {
+        font-size: 1.4rem;
+    }
+}

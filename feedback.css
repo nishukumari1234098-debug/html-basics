@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+header{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    animation: slidedown 0.6s ease;
+    
+}
+@keyframes slidedown{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1{
+    font-size: 3.1rem;
+}
+
+nav ul{
+    background-color: rgb(8, 8, 71);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 29px;
+    justify-content: center;
+    gap: 90px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    
+}
+
+nav a{
+    text-decoration: none;
+    background-color:#bb92fd;
+    padding: 15px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    transform: translateY(-6px);
+    background-color:  #764ba2;
+    color: white;
+    padding: 15px;
+    border-radius: 19px;
+    border-bottom:2px solid white ;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.text{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: rgb(239, 219, 255);
+    border-radius: 30px;
+}
+
+form{
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(252, 252, 252, 0.9);
+    border-radius: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+legend{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(254, 251, 255);
+    padding-bottom: 30px;
+    background-color: #764ba2;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.form-div{
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    
+}
+
+.name-inp{
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid rgba(139, 22, 249, 0.5);
+}
+
+.rio{
+    background-color:rgba(227, 178, 255, 0.3);
+    padding: 25px;
+    width: 90%;
+    border-radius: 15px;
+    /* padding-bottom: 0; */
+    font-size: 1.1rem;
+    border: 3px solid rgba(203, 22, 249, 0.5);
+}
+
+.text-feed{
+    width: 90%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 20px;
+    /* background-color: rgba(253, 249, 236, 0.3); */
+    border: 3px solid rgba(147, 22, 249, 0.5);
+}
+
+.para{
+    font-size: 1rem;
+    color: rgb(53, 52, 52);
+}
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+input[type="radio"]{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+button{
+    padding: 17px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 90%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow:  0 10px 30px rgba(202, 90, 253, 0.5);
+    border: none;
+    color: white;
+}
+
+footer{
+    margin-top: 70px;
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+ }
+
+ .foot{
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+ }
+
+ .foot-box1{
+    display: flex;
+    gap: 100px;
+ }
+
+ .min-foot{
+    padding: 25px;
+    width: 45%;
+ }
+ .min-foot h3{
+    font-size: 1.6rem;
+    color: #d8290a;
+ }
+ .min-foot p{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .icons1 a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: #cca2fd;
+    padding: 9px;
+    border-radius: 50px;
+ }
+
+ .min-foot ul{
+    list-style: none;
+ }
+ .min-foot a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+ }
+ .cont{
+    padding: 25px;
+ }
+
+ .cont h3{
+    font-size: 1.6rem;
+    color: #d8290a;
+ }
+ .cont p{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .copy{
+    font-size: 1.3rem;
+    color:white;
+    text-align: center;
+    padding: 20px;
+ }
+
+
+
+
+ @media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    .text {
+        width: 95%;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    legend {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .name-inp, .text-feed, .rio {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .foot-box1 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .min-foot, .cont {
+        width: 100%;
+    }
+
+    .min-foot h3, .cont h3 {
+        font-size: 1.3rem;
+    }
+
+    .min-foot p, .cont p {
+        font-size: 1rem;
+    }
+
+    .copy {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    nav ul {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+
+    .text {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    form {
+        width: 80%;
+        padding: 30px;
+    }
+
+    legend {
+        font-size: 2.4rem;
+    }
+
+    .foot-box1 {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .min-foot, .cont {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        padding: 18px 25px;
+    }
+
+    .text {
+        width: 70%;
+        font-size: 1.4rem;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .foot-box1 {
+        gap: 150px;
+    }
+
+    .copy {
+        font-size: 1.4rem;
+    }
+}

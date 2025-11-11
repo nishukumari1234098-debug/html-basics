@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>👤Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <header>
-        <h1>My Profile</h1>
-        <img src="circle-photo.jpg" width="300px" height="200px" alt="Profile-Picture">
-        <h3>Welcome to my personal page!</h3><hr><hr>
+        <h1>👤My Profile</h1>
+        <!-- <img src="circle-photo.jpg" width="300px" height="200px" alt="Profile-Picture"> -->
+        <h3>Welcome to my personal page!</h3>
     </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">🏠Home</a></li>
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="course.html">📚 Courses</a></li>
+            <li><a href="feedback.html">📝Feedback</a></li>
+            <li><a href="grade.html">📊Grades Table</a></li>
+            <li><a href="contact.html">📞Contact Us</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <div>
-            <h2>👤Personal Details</h2><hr>
-            <p>Hello! My name is Nisha Singh, and I am currently pursuing a Bachelor of Computer Applications (BCA) at Eternal University, enrolled through NavGurukul. I am passionate about learning new technologies and improving my skills step by step. I believe in continuous growth and love exploring how technology can solve real-world problems.</p>
-            <p>I am from India, and I have always been curious about computers and how they work. In my free time, I enjoy learning new programming concepts, working on small projects, and developing my communication skills.</p>
+        <div class="my-profile">
+            <div><img src="self-profile.jpeg" height="200" width="200" alt="">
+            <h2>Nisha Singh</h2>
+            <p>💻 Computer Science Student | 🚀 Tech Enthusiast | 🌟 Lifelong Learner</p></div>
         </div>
-        <div>
+        <div class="detail-box1">
+            <h2>📝 Personal Details</h2><hr>
+            <p>Hello! I'm Nisha, a passionate BCA student with a love for technology and learning new skills.I believe in continuous growth and always try to improve myself every day.</p>
+            <div class="min-box">
+                <p><strong>Age:</strong>19</p>
+                <p><strong>Location:</strong>New Delhi, India</p>
+                <p><strong>Major:</strong>Bachelor of Computer Applications (BCA)</p>
+                <p><strong>Year:</strong>Junior (1st Year)</p>
+                <p><strong>Expected Graduation:</strong>2027</p>
+            </div>
+        </div>
+        <div class="detail-box2">
             <h2>🎯 🏃‍♀️Hobbies & Interests</h2><hr>
             <h3>What I Love to Do❤️✨</h3>
             <ul>
@@ -30,7 +52,7 @@
                 <li><b>Outdoor Walks:</b>I like spending quiet time outdoors to refresh my mind.</li>
             </ul>
         </div>
-        <div>
+        <div class="detail-box3">
             <h2>🛠️🌟Skills & Abilities</h2><hr>
             <h3>Technical Skills💻</h3>
             <ol>
@@ -49,7 +71,7 @@
             </ul>
         </div>
 
-        <div>
+        <div class="detail-box4">
             <h2>🎯Goals & Aspirations</h2><hr>
             <h3>Short-term Goals⏳</h3>
             <ol>
@@ -68,21 +90,63 @@
                 <li>Keep updating my skills with new technologies and industry trends</li>
                 <li>Achieve career stability and explore opportunities for remote work in the future.</li>
             </ol>
-        </div><hr><hr>
+        </div>
+        <div class="detail-box5">
+            <h2>💭My Philosophy</h2>
+            <p><em>"Learning is not a destination, it's a lifelong journey. Every challenge I face is an opportunity to grow stronger, and every setback is a lesson in disguise. I believe in the power of continuous improvement, staying curious about the world, and using technology to make a positive impact on people's lives."</em></p>
+        </div>
     </main>
     <footer>
-        <h2>ℹ️📖More Details About Me</h2>
-        <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="course.html">Courses</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="grade.html">Grades Table</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <p><b>&copy; 2025 Student Portal. All rights reserved.</b></p>
-    <p>Created by Nisha Singh with dedication and passion for learning.</p>
+        
+    <div class="foot">
+            <div class="foot-box1">
+                <div class="min-foot">
+                   <h3>About EduPortal</h3>
+                   <p>Your comprehensive learning management system for tracking courses, assignments, and academic progress.</p>
+                   <div class="icons1">
+                       <a href="#">📘</a>
+                       <a href="#">🐦</a>
+                       <a href="#">📷</a>
+                       <a href="#">💼</a>
+                   </div>
+                </div>
+                <div class="min-foot">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">All Courses</a></li>
+                        <li><a href="#">Assignments</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Resources</a></li>
+                   </ul>
+               </div>
+            </div>
+            
+            <div class="foot-box1">
+                <div class="min-foot">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Submit Feedback</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <h3>Contact Info</h3>
+                    <p>📧 Email: support@eduportal.com</p>
+                    <p>📞 Phone: +1 (555) 123-4567</p>
+                    <p>📍 Address: 123 Education St, Learning City, LC 12345</p>
+                </div>
+            </div> <hr>
+            
+            <div class="copy">
+                <p>&copy; 2025 EduPortal. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+
+        </div>
+
     </footer>
     
 </body>

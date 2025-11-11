@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📊Grade Tablle Page</title>
+    <link rel="stylesheet" href="grade.css">
 </head>
 <body>
     <header>
-        <h1>My Grades📊</h1><hr><hr>
+        <h1>My Grades📊
     </header>
+     <nav>
+        <ul>
+            <li><a href="home.html">🏠Home</a></li>
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="course.html">📚 Courses</a></li>
+            <li><a href="feedback.html">📝Feedback</a></li>
+            <li><a href="grade.html">📊Grades Table</a></li>
+            <li><a href="contact.html">📞Contact Us</a></li>
+        </ul>
+    </nav>
     <main>
-        <fieldset>
-            <table border="3">
+            <table>
             <caption><h2>📊Fall 2025 Semester - Current Grades</h2></caption>
 
             <thead>
@@ -59,10 +69,10 @@
                 </tr>
             </tfoot>
         </table>
-        </fieldset>
+        
 
-        <fieldset>
-            <table border="3">
+        
+            <table>
                 <caption><h2>📚Spring 2025 Semester - Completed</h2></caption>
 
                 <thead>
@@ -120,10 +130,10 @@
 
             
             </table>
-        </fieldset>
+        
 
-        <fieldset>
-            <table border="3">
+        <div>
+            <table>
                 <caption><h2>📒Fall 2024 Semester - Completed</h2></caption>
 
                 <thead>
@@ -179,32 +189,67 @@
                 </tr>
             </tfoot>
             </table>
-        </fieldset><hr>
+        
 
-        <div>
+        <div class="Summary">
             <h1>🎓Cumulative Academic Summary</h1>
             <p>🏆Total Credits Earned: <b>38</b></p>
             <p>Cumulative GPA:</p>
             <h1>3.61</h1>
             <p>📚Academic Standing: <b>Good Standing</b></p>
-        </div><hr><hr>
+        </div>
     </main>
 
     <footer>
-        <h1>Quick Links🔗</h1>
-        <p>🗂️Get started by visiting one of these popular section:</p>
-        <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="course.html">Courses</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav><hr>
+     <div class="foot">
+            <div class="foot-box1">
+                <div class="min-foot">
+                   <h3>About EduPortal</h3>
+                   <p>Your comprehensive learning management system for tracking courses, assignments, and academic progress.</p>
+                   <div class="icons1">
+                       <a href="#">📘</a>
+                       <a href="#">🐦</a>
+                       <a href="#">📷</a>
+                       <a href="#">💼</a>
+                   </div>
+                </div>
+                <div class="min-foot">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">All Courses</a></li>
+                        <li><a href="#">Assignments</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Resources</a></li>
+                   </ul>
+               </div>
+            </div>
+            
+            <div class="foot-box1">
+                <div class="min-foot">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Submit Feedback</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="cont">
+                    <h3>Contact Info</h3>
+                    <p>📧 Email: support@eduportal.com</p>
+                    <p>📞 Phone: +1 (555) 123-4567</p>
+                    <p>📍 Address: 123 Education St, Learning City, LC 12345</p>
+                </div>
+            </div> <hr>
+            
+            <div class="copy">
+                <p>&copy; 2025 EduPortal. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
 
-    <p><b>&copy; 2025 Student Portal. All rights reserved.</b></p>
-    <p><b>Keep up the great work!</b></p>
+        </div>
+
     </footer>
     
 </body>
