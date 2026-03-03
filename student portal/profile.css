@@ -43,38 +43,33 @@ nav ul{
     background-color: rgb(8, 8, 71);
     display: flex;
     flex-wrap: wrap;
-    padding: 29px;
+    padding: 25px;
     justify-content: center;
     gap: 90px;
     font-size: 1.1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     list-style: none;
-    
+
 }
 
 nav a{
     text-decoration: none;
-    background-color: #bb92fd;
-    padding: 15px;
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    transition: all 0.5s ease;
+    color: white;
+    transition: left 0.5s;
 }
 
 nav a:hover{
-    transform: translateY(-6px);
-    background-color:  #764ba2;
-    color: white;
+    background-color: #764ba2;
     padding: 15px;
     border-radius: 19px;
-    border-bottom:4px solid rgb(167, 229, 248) ;
-    box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
+    border-bottom:2px solid white ;
+
 }
 
 .my-profile{
     width: 70%;
     border-radius: 30px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: white;
     margin: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -128,7 +123,7 @@ nav a:hover{
 }
 
 .detail-box2{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: white;
     width: 80%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     margin: auto;
@@ -159,7 +154,7 @@ nav a:hover{
 }
 
 .detail-box3{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: white;
     width: 80%;
     margin: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
@@ -198,7 +193,7 @@ nav a:hover{
 }
 
 .detail-box4{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: white;
     width: 80%;
     margin: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
@@ -229,7 +224,7 @@ nav a:hover{
 }
 
 .detail-box5{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: white;
     width: 80%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     margin: auto;
@@ -255,7 +250,7 @@ nav a:hover{
 }
 
 hr{
-    border: 1.3px solid blue;
+    border: 1.3px solid rgb(255, 255, 255);
 }
 
 footer{
@@ -281,21 +276,30 @@ footer{
  }
  .min-foot h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #f7f2f1;
  }
  .min-foot p{
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 10px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
  }
 
+   .icons1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
  .icons1 a{
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
-    background-color: #068fbd;
+    background-color: rgb(238, 228, 229);
     padding: 9px;
     border-radius: 50px;
  }
@@ -305,7 +309,7 @@ footer{
  }
  .min-foot a{
     text-decoration: none;
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
  }
  .cont{
@@ -314,10 +318,10 @@ footer{
 
  .cont h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #ffffff;
  }
  .cont p{
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -326,61 +330,176 @@ footer{
 
  .copy{
     font-size: 1.3rem;
-    color: rgb(255, 255, 255, 0.8);
+    color:white;
     text-align: center;
     padding: 20px;
  }
 
 
 
+@media (min-width: 768px) and (max-width: 1200px) {
 
-@media (max-width: 600px) {
-    body {
-        background-color: #ffe3e3;   /* Light Pink */
-        color: #4a0404;
+    nav ul {
+        gap: 60px;
     }
-    header {
-        background-color: #ff6b6b;
+
+    .my-profile {
+        width: 60%;
     }
-    .my-profile, .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
+
+    .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
+        width: 70%;
+    }
+
+    .foot {
+        width: 75%;
+    }
+
+    .foot-box1 {
+        gap: 60px;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    nav ul {
+        gap: 40px;
+        font-size: 1rem;
+    }
+
+    .my-profile {
+        width: 80%;
+        padding: 25px;
+    }
+
+    .my-profile img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
+        width: 85%;
+        padding: 25px;
+    }
+
+    .detail-box1 h2, .detail-box2 h2,
+    .detail-box3 h2, .detail-box4 h2, .detail-box5 h2 {
+        font-size: 1.8rem;
+    }
+
+    .foot {
+        width: 85%;
+    }
+
+    .foot-box1 {
+        gap: 40px;
+    }
+
+    .min-foot h3,
+    .cont h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+    header h3 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+   
+    .my-profile {
         width: 90%;
-        background-color: #fff5f5;
+        padding: 20px;
     }
-    h2 {
+    .my-profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .my-profile h2 {
         font-size: 1.5rem;
     }
-    p, li {
+
+  
+    .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .detail-box1 h2, .detail-box2 h2,
+    .detail-box3 h2, .detail-box4 h2, .detail-box5 h2 {
+        font-size: 1.6rem;
+    }
+
+    .detail-box1 p, .detail-box2 p,
+    .detail-box3 p, .detail-box4 p, .detail-box5 p {
+        font-size: 0.95rem;
+        letter-spacing: 0.4px;
+        word-spacing: 3px;
+    }
+
+    .detail-box2 ul,
+    .detail-box3 ul, .detail-box3 ol,
+    .detail-box4 ol {
+        font-size: 0.95rem;
+    }
+
+ 
+    .foot {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .foot-box1 {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .min-foot {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .min-foot h3,
+    .cont h3 {
+        font-size: 1.3rem;
+    }
+
+    .min-foot p,
+    .cont p,
+    .min-foot a {
+        font-size: 0.95rem;
+    }
+
+
+    .icons1 {
+        gap: 10px;
+    }
+
+    .icons1 a {
+        font-size: 17px;
+        padding: 7px;
+        margin: 0;
+    }
+
+    .copy {
         font-size: 0.9rem;
     }
 }
 
-@media (min-width: 601px) and (max-width: 900px) {
-    body {
-        background-color: #e0ffe8;   /* Light Green */
-        color: #034d20;
-    }
-    header {
-        background-color: #04b97f;
-    }
-    .my-profile, .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
-        width: 85%;
-        background-color: #f3fff5;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (min-width: 901px) {
-    body {
-        background-color: #c3fdff;   /* Original Blue */
-        color: #000;
-    }
-    header {
-        background-color: #03aaaa;
-    }
-    .my-profile, .detail-box1, .detail-box2, .detail-box3, .detail-box4, .detail-box5 {
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 80%;
-    }
-}

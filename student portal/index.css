@@ -178,21 +178,30 @@ footer{
  }
  .min-foot h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #f7f2f1;
  }
  .min-foot p{
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 10px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
  }
 
+   .icons1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
  .icons1 a{
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
-    background-color: #068fbd;
+    background-color: rgb(238, 228, 229);
     padding: 9px;
     border-radius: 50px;
  }
@@ -202,7 +211,7 @@ footer{
  }
  .min-foot a{
     text-decoration: none;
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
  }
  .cont{
@@ -211,10 +220,10 @@ footer{
 
  .cont h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #ffffff;
  }
  .cont p{
-    color: rgb(255, 255, 255, 0.8);
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -223,32 +232,193 @@ footer{
 
  .copy{
     font-size: 1.3rem;
-    color: rgb(255, 255, 255, 0.8);
+    color:white;
     text-align: center;
     padding: 20px;
  }
 
 
-@media (max-width: 1024px){
-    .min-box2{width: 45%;}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 30px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        padding: 10px;
+    }
+
+    .box1 {
+        width: 90%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .min-box h2 {
+        font-size: 1.9rem;
+    }
+
+    .min-box p {
+        font-size: 1rem;
+    }
+
+    button, .btn {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .box2 {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .min-box2 {
+        width: 48%;
+        padding: 20px;
+    }
+
+    .min-box2 h3 {
+        font-size: 1.3rem;
+    }
+
+    .min-box2 span {
+        font-size: 2.5rem;
+    }
+
+    .box3 {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .box3 h3 {
+        font-size: 1.4rem;
+    }
+
+    .box3 p {
+        font-size: 1rem;
+    }
+
+    .foot {
+        width: 90%;
+    }
+
+    .foot-box1 {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+
+    .min-foot {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .min-foot h3,
+    .cont h3 {
+        font-size: 1.3rem;
+    }
+
+    .min-foot p,
+    .min-foot a,
+    .cont p {
+        font-size: 1rem;
+    }
+
+  
+
+
+    .icons1 a {
+        font-size: 15px;
+        margin-right: 10px;
+        padding: 7px;
+    }
 }
 
-@media(max-width:768px){
-    body main{background-color: white; padding: 20px;}
-    header{background: rgb(212, 212, 212);}
-    header h1{font-size: 2.2rem; color: #764ba2;}
-    .box1, .box2, .box3{width: 90%;}
-    .box1, .box3{background-color: skyblue;}
-    nav ul{gap: 30px; padding: 15px; background-color: antiquewhite;}
-    nav a{color: black;}
-    .min-box2{width: 100%; background-color: skyblue;}
-    .min-box h2{font-size: 1.6rem;}
-    footer{ background-color: antiquewhite; color: black;}
-}
+@media (max-width: 480px) {
 
-@media(max-width:480px){
-    header h1{font-size: 1.8rem;}
-    nav ul{flex-direction: column; gap: 15px;}
-    .min-box h1{font-size: 1.2rem;}
-    .min-box2 h3{font-size: 1.2rem;}
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding: 10px;
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .min-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .min-box p {
+        font-size: 0.9rem;
+    }
+
+    button, .btn {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .min-box2 {
+        width: 100%;
+    }
+
+    .min-box2 h3 {
+        font-size: 1.2rem;
+    }
+
+    .min-box2 p {
+        font-size: 0.9rem;
+    }
+
+    .min-box2 span {
+        font-size: 2rem;
+    }
+
+    .box3 h3 {
+        font-size: 1.3rem;
+    }
+
+    .box3 p {
+        font-size: 0.9rem;
+    }
+
+    .foot-box1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .min-foot {
+        padding: 10px;
+    }
+
+    .min-foot h3,
+    .cont h3 {
+        font-size: 1.2rem;
+    }
+
+    .icons1 a {
+        
+        margin-right: 6px;
+        padding: 6px;
+    }
+
+    .copy {
+        font-size: 1rem;
+    }
 }

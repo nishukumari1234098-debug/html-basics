@@ -42,38 +42,35 @@ nav ul{
     background-color: rgb(8, 8, 71);
     display: flex;
     flex-wrap: wrap;
-    padding: 29px;
+    padding: 25px;
     justify-content: center;
     gap: 90px;
     font-size: 1.1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     list-style: none;
-    
+
 }
 
 nav a{
     text-decoration: none;
-    background-color:#bb92fd;
-    padding: 15px;
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    transition: all 0.5s ease;   
+    color: white;
+    transition: left 0.5s;
 }
 
 nav a:hover{
-    transform: translateY(-6px);
-    background-color:  #764ba2;
-    color: white;
+    background-color: #764ba2;
     padding: 15px;
     border-radius: 19px;
     border-bottom:2px solid white ;
-    box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .hero{
     width: 73%;
     margin: auto;
-    background:  linear-gradient(135deg, rgba(133, 38, 211, 0.95) 0%, rgba(228, 96, 248, 0.95) 50%, rgba(236, 165, 253, 0.95) 100%);
+    background-color: white;
+    /* background:  linear-gradient(135deg, rgba(133, 38, 211, 0.95) 0%, rgba(228, 96, 248, 0.95) 50%, rgba(236, 165, 253, 0.95) 100%); */
     margin-top: 40px;
     font-size: 1.4rem;
     border-radius: 30px;
@@ -124,14 +121,15 @@ b{
 
 button{
     padding: 15px;
-    border-radius: 20px;
-    margin-left: 20px;
-    font-size: 1rem;
-    margin-top: 30px;
+    margin-left: 13px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
     border: none;
-    background:  linear-gradient(135deg, rgba(133, 38, 211, 0.95) 0%, rgba(226, 105, 245, 0.95) 50%, rgba(203, 72, 236, 0.95) 100%);
 }
-
 
 footer{
     margin-top: 70px;
@@ -156,21 +154,30 @@ footer{
  }
  .min-foot h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #f7f2f1;
  }
  .min-foot p{
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 10px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
  }
 
+   .icons1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
  .icons1 a{
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
-    background-color: rgb(255, 215, 221);
+    background-color: rgb(238, 228, 229);
     padding: 9px;
     border-radius: 50px;
  }
@@ -180,7 +187,7 @@ footer{
  }
  .min-foot a{
     text-decoration: none;
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
  }
  .cont{
@@ -189,10 +196,10 @@ footer{
 
  .cont h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #ffffff;
  }
  .cont p{
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -207,144 +214,154 @@ footer{
  }
 
 
+@media (max-width: 992px) {
 
- @media (max-width: 600px) {
     header h1 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        gap: 40px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .hero, .hero-sec {
+        width: 80%;
+    }
+
+    .foot {
+        width: 85%;
+    }
+
+    .foot-box1 {
+        gap: 50px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    header {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        gap: 25px;
+        padding: 17px;
+        font-size: 0.95rem;
+    }
+
+
+    .hero, .hero-sec {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .hero p,
+    .hero-sec p {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
+
+    .hero-sec h2 {
+        font-size: 1.7rem;
+    }
+
+ 
+    .foot {
+        width: 90%;
+    }
+
+    .foot-box1 {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .min-foot {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    header {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 20px;
-        padding: 15px;
-        font-size: 1rem;
+        gap: 12px;
+        padding: 12px;
+        font-size: 0.85rem;
     }
 
-    nav a {
-        font-size: 1rem;
-        padding: 10px 15px;
+    nav a:hover {
+        padding: 8px;
         border-radius: 10px;
     }
 
-    .hero {
-        width: 90%;
-        font-size: 1rem;
-        padding: 20px;
+    .hero,
+    .hero-sec {
+        width: 95%;
+        margin-top: 25px;
+        padding: 18px;
     }
 
-    .hero-sec {
-        width: 90%;
-        padding: 20px;
+    .hero p,
+    .hero-sec p {
+        font-size: 0.9rem;
+        padding: 5px 10px;
     }
 
     .hero-sec h2 {
         font-size: 1.4rem;
     }
 
-    .hero-sec p {
-        font-size: 1rem;
-        padding: 10px;
+    button {
+        width: 100%;
+        margin: 8px 0;
     }
 
-    button {
-        width: 90%;
-        margin: 20px auto;
-        display: block;
-        font-size: 1rem;
+    .foot {
+        width: 95%;
+        padding: 20px;
     }
 
     .foot-box1 {
         flex-direction: column;
-        gap: 30px;
-        text-align: center;
+        gap: 20px;
     }
 
     .min-foot,
     .cont {
         width: 100%;
-    }
-
-    .min-foot h3,
-    .cont h3 {
-        font-size: 1.3rem;
-    }
-
-    .min-foot p,
-    .cont p {
-        font-size: 1rem;
-    }
-
-    .copy {
-        font-size: 1rem;
-    }
-}
-
-
-
-@media (max-width: 900px) {
-    header h1 {
-        font-size: 2.3rem;
-    }
-
-    nav ul {
-        gap: 40px;
-        padding: 20px;
-    }
-
-    .hero {
-        width: 85%;
-        font-size: 1.2rem;
-        padding: 25px;
-    }
-
-    .hero-sec {
-        width: 80%;
-        font-size: 1.1rem;
-    }
-
-    .foot {
-        width: 90%;
-    }
-
-    .foot-box1 {
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-    }
-
-    .min-foot,
-    .cont {
-        width: 80%;
-        margin: auto;
+        padding: 10px;
         text-align: center;
     }
-}
 
-
-@media (min-width: 1200px) {
-    header h1 {
-        font-size: 3.5rem;
+    .icons1 {
+        justify-content: center;
+        gap: 10px;
     }
 
-    nav a {
-        font-size: 1.3rem;
-        padding: 18px 25px;
-    }
-
-    .hero {
-        width: 70%;
-        font-size: 1.5rem;
-    }
-
-    .hero-sec {
-        width: 60%;
-    }
-
-    .foot-box1 {
-        gap: 150px;
+    .icons1 a {
+        margin: 0;
     }
 
     .copy {
-        font-size: 1.4rem;
+        font-size: 0.9rem;
+        padding-top: 15px;
     }
 }

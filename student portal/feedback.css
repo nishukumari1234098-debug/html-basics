@@ -38,32 +38,27 @@ nav ul{
     background-color: rgb(8, 8, 71);
     display: flex;
     flex-wrap: wrap;
-    padding: 29px;
+    padding: 25px;
     justify-content: center;
     gap: 90px;
     font-size: 1.1rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     list-style: none;
-    
+
 }
 
 nav a{
     text-decoration: none;
-    background-color:#bb92fd;
-    padding: 15px;
-    border-radius: 20px;
-    color: rgb(0, 0, 0);
-    transition: all 0.5s ease;
+    color: white;
+    transition: left 0.5s;
 }
 
 nav a:hover{
-    transform: translateY(-6px);
-    background-color:  #764ba2;
-    color: white;
+    background-color: #764ba2;
     padding: 15px;
     border-radius: 19px;
     border-bottom:2px solid white ;
-    box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -172,6 +167,7 @@ button{
     color: white;
 }
 
+
 footer{
     margin-top: 70px;
     width: 100%;
@@ -195,21 +191,30 @@ footer{
  }
  .min-foot h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #f7f2f1;
  }
  .min-foot p{
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 10px;
     padding-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
  }
 
+   .icons1 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
  .icons1 a{
     text-decoration: none;
     font-size: 20px;
     margin-right: 20px;
-    background-color: #cca2fd;
+    background-color: rgb(238, 228, 229);
     padding: 9px;
     border-radius: 50px;
  }
@@ -219,7 +224,7 @@ footer{
  }
  .min-foot a{
     text-decoration: none;
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
  }
  .cont{
@@ -228,10 +233,10 @@ footer{
 
  .cont h3{
     font-size: 1.6rem;
-    color: #d8290a;
+    color: #ffffff;
  }
  .cont p{
-    color: white;
+    color: #FF7F50;
     font-size: 1.1rem;
     padding-top: 2px;
     padding-bottom: 10px;
@@ -246,142 +251,217 @@ footer{
  }
 
 
+ @media (max-width: 992px) {
 
-
- @media (max-width: 600px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 20px;
-        padding: 15px;
-    }
-
-    nav a {
-        font-size: 1rem;
-        padding: 10px 15px;
-        border-radius: 10px;
-    }
-
-    .text {
-        width: 95%;
-        font-size: 1rem;
-        padding: 20px;
-    }
-
-    form {
-        width: 90%;
-        padding: 20px;
-    }
-
-    legend {
-        font-size: 2rem;
-        padding: 15px;
-    }
-
-    .name-inp, .text-feed, .rio {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    button {
-        width: 100%;
-        font-size: 1rem;
-        padding: 12px;
-    }
-
-    .foot-box1 {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .min-foot, .cont {
-        width: 100%;
-    }
-
-    .min-foot h3, .cont h3 {
-        font-size: 1.3rem;
-    }
-
-    .min-foot p, .cont p {
-        font-size: 1rem;
-    }
-
-    .copy {
-        font-size: 1rem;
-    }
-}
-
-
-@media (max-width: 900px) {
-    header h1 {
-        font-size: 2.3rem;
-    }
-
-    nav ul {
-        gap: 40px;
-        padding: 20px;
-    }
-
-    nav a {
-        font-size: 1.1rem;
-        padding: 12px 20px;
-    }
-
-    .text {
-        width: 90%;
-        font-size: 1.1rem;
-    }
-
-    form {
-        width: 80%;
-        padding: 30px;
-    }
-
-    legend {
+    header h1{
         font-size: 2.4rem;
     }
 
-    .foot-box1 {
-        flex-wrap: wrap;
-        gap: 50px;
+    nav ul{
+        gap: 40px;
+        padding: 20px;
+        font-size: 1rem;
     }
 
-    .min-foot, .cont {
-        width: 80%;
-        margin: auto;
-        text-align: center;
+    form{
+        width: 75%;
+        padding: 30px;
+    }
+
+    legend{
+        font-size: 2.2rem;
+    }
+
+    .form-div{
+        width: 90%;
+    }
+
+    .name-inp, .rio, .text-feed{
+        width: 100%;
+    }
+
+    .foot{
+        width: 90%;
+    }
+
+    .foot-box1{
+        gap: 40px;
     }
 }
 
 
-@media (min-width: 1200px) {
-    header h1 {
-        font-size: 3.5rem;
+
+@media (max-width: 992px) {
+
+    header h1{
+        font-size: 2.4rem;
     }
 
-    nav a {
+    nav ul{
+        gap: 40px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    form{
+        width: 75%;
+        padding: 30px;
+    }
+
+    legend{
+        font-size: 2.2rem;
+    }
+
+    .form-div{
+        width: 90%;
+    }
+
+    .name-inp, .rio, .text-feed{
+        width: 100%;
+    }
+
+    .foot{
+        width: 90%;
+    }
+
+    .foot-box1{
+        gap: 40px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        gap: 25px;
+        font-size: 0.95rem;
+    }
+
+    .text{
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    form{
+        width: 85%;
+        padding: 25px;
+    }
+
+    legend{
+        font-size: 2rem;
+    }
+
+    .name{
+        font-size: 1.1rem;
+    }
+
+    button{
+        font-size: 1.1rem;
+    }
+
+    .foot-box1{
+        gap: 20px;
+    }
+}
+
+
+
+@media (max-width: 480px){
+
+
+    header{
+        padding: 20px;
+    }
+    header h1{
+        font-size: 1.6rem;
+    }
+
+
+    nav ul{
+        flex-direction: column;
+        gap: 15px;
+        font-size: 0.85rem;
+        padding: 15px;
+    }
+
+    nav a:hover{
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+
+    .text{
+        width: 90%;
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+
+    form{
+        width: 95%;
+        padding: 20px;
+    }
+
+    legend{
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .name{
+        font-size: 1rem;
+    }
+
+    .name-inp, .rio, .text-feed{
+        width: 100%;
+    }
+
+    button{
+        font-size: 1rem;
+        padding: 14px;
+        width: 100%;
+    }
+
+    .foot{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .foot-box1{
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .min-foot, .cont{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .min-foot h3, .cont h3{
         font-size: 1.3rem;
-        padding: 18px 25px;
     }
 
-    .text {
-        width: 70%;
-        font-size: 1.4rem;
+    .min-foot p, .cont p, .min-foot a{
+        font-size: 1rem;
     }
 
-    form {
-        width: 50%;
+    .icons1{
+        gap: 10px;
+        justify-content: center;
+    }
+    .icons1 a{
+        margin: 0;
+        padding: 7px;
+        font-size: 18px;
     }
 
-    .foot-box1 {
-        gap: 150px;
-    }
-
-    .copy {
-        font-size: 1.4rem;
+    .copy{
+        font-size: 0.9rem;
     }
 }
